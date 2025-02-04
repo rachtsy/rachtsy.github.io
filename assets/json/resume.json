@@ -158,6 +158,27 @@
   // ],
   "publications": [
     {
+      "name": "MoLEx: Mixture of Layer Experts for Fine-tuning with Sparse Upcycling",
+      "publisher": "Rachel S.Y. Teo, Tan M. Nguyen",
+      "releaseDate": "2025-02-01",
+      "url": "https://openreview.net/forum?id=rWui9vLhOc&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)",
+      "summary": "In International Conference on Learning Representations (ICLR), 2025"
+    },
+    {
+      "name": "Tight Clusters Make Specialized Experts",
+      "publisher": "Stefan Nielsen*, Rachel S.Y. Teo*, Laziz Abdullaev, Tan M. Nguyen",
+      "releaseDate": "2025-02-01",
+      "url": "https://openreview.net/forum?id=Pu3c0209cx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)",
+      "summary": "In International Conference on Learning Representations (ICLR), 2025"
+    },
+    {
+      "name": "CAMEx: Curvature-aware Merging of Experts",
+      "publisher": "Viet Dung Nguyen, Minh Nguyen Hoang, Rachel S.Y. Teo, Luc Nguyen, Tan Minh Nguyen, Linh Duy Tran",
+      "releaseDate": "2025-02-01",
+      "url": "https://openreview.net/forum?id=nT2u0M0nf8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)",
+      "summary": "In International Conference on Learning Representations (ICLR), 2025"
+    },
+    {
       "name": "MomentumSMoE: Integrating Momentum into Sparse Mixture of Experts",
       "publisher": "Rachel S.Y. Teo, Tan M. Nguyen",
       "releaseDate": "2024-10-30",
