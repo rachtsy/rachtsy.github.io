@@ -3,6 +3,45 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{molex,
+  abbr={ICLR},
+  title={MoLEx: Mixture of Layer Experts for Fine-tuning with Sparse Upcycling},
+  author={Rachel S.Y. Teo and Tan M. Nguyen},
+  abstract={Large-scale pre-training of deep models, followed by fine-tuning them to adapt to downstream tasks, has become the cornerstone of natural language processing (NLP). The prevalence of vast corpses of data coupled with computational resources has led to large models with a considerable number of parameters. While the massive size of these models has led to remarkable success in many NLP tasks, a detriment is the expense required to retrain all the base model's parameters for the adaptation to each task or domain. Parameter Efficient Fine-Tuning (PEFT) provides a highly effective solution for this challenge by minimizing the number of parameters required to be trained in adjusting to the new task while maintaining the quality of the model. While existing methods have achieved impressive results, they mainly focus on adapting a subset of parameters using adapters, weight reparameterization, and prompt engineering. In this paper, we study layers as extractors of different types of linguistic information that are valuable when used in conjunction with each other. We then propose the Mixture of Layer Experts (MoLEx), a novel Sparse Mixture of Experts (SMoE) whose experts are layers in the pre-trained model. In particular, MoLEx is applied at each layer of the pre-trained model. It performs a conditional computation of a mixture of layers during fine-tuning to provide the model with more structural knowledge about the data. By providing an avenue for information exchange between layers, MoLEx enables the model to make a more well-informed prediction for the downstream task, leading to better fine-tuning results with the same number of effective parameters. As experts can be processed in parallel, MoLEx introduces minimal additional computational overhead. We empirically corroborate the advantages of MoLEx when combined with popular PEFT baseline methods on a variety of downstream fine-tuning tasks, including the popular GLUE benchmark for natural language understanding (NLU) as well as the natural language generation (NLG) End-to-End Challenge (E2E).},
+  journal={International Conference on Learning Representations (ICLR), 2025},
+  year={2025},
+  month={Feb},
+  url={https://openreview.net/forum?id=rWui9vLhOc&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)},
+  pdf={8260_MoLEx_Mixture_of_Layer_Ex.pdf},
+  dimensions={true},
+}
+
+@article{ellipsmoe,
+  abbr={ICLR},
+  title={Tight Clusters Make Specialized Experts},
+  author={Stefan Nielsen* and Rachel S.Y. Teo* and Laziz Abdullaev and Tan M. Nguyen},
+  abstract={Sparse Mixture-of-Experts (MoE) architectures have emerged as a promising approach to decoupling model capacity from computational cost. At the core of the MoE model is the router, which learns the underlying clustering structure of the input distribution in order to send input tokens to appropriate experts. However, latent clusters may be unidentifiable in high dimension, which causes slow convergence, susceptibility to data contamination, and overall degraded representations as the router is unable to perform appropriate token-expert matching. We examine the router through the lens of clustering optimization and derive optimal feature weights that maximally identify the latent clusters. We use these weights to compute the token-expert routing assignments in an adaptively transformed space that promotes well-separated clusters, which helps identify the best-matched expert for each token. In particular, for each expert cluster, we compute a set of weights that scales features according to whether that expert clusters tightly along that feature. We term this novel router the Adaptive Clustering (AC) router. Our AC router enables the MoE model to obtain three connected benefits: 1) faster convergence, 2) better robustness to data corruption, and 3) overall performance improvement, as experts are specialized in semantically distinct regions of the input space. We empirically demonstrate the advantages of our AC router over baseline routing methods when applied on a variety of MoE backbones for large-scale language modeling and object recognition tasks in both clean and corrupted settings.},
+  journal={International Conference on Learning Representations (ICLR), 2025},
+  year={2025},
+  month={Feb},
+  url={https://openreview.net/forum?id=Pu3c0209cx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)},
+  pdf={4160_Tight_Clusters_Make_Speci.pdf},
+  dimensions={true},
+}
+
+@article{camex,
+  abbr={ICLR},
+  title={CAMEx: Curvature-aware Merging of Experts},
+  author={Viet Dung Nguyen and Minh Nguyen Hoang and Rachel S.Y. Teo and Luc Nguyen and Tan Minh Nguyen and Linh Duy Tran},
+  abstract={Existing methods for merging experts during model training and fine-tuning predominantly rely on Euclidean geometry, which assumes a flat parameter space. This assumption canlimit the model’s generalization ability, especially during the pre-training phase, where the parameter manifold might exhibit more complex curvature. Curvatureaware merging methods typically require additional information and computational resources to approximate the Fisher Information Matrix, adding memory overhead. In this paper, we introduce CAMEx(Curvature-AwareMergingofExperts), anovelexpert merging protocol that incorporates natural gradients to account for the non-Euclidean curvature of the parameter manifold. By leveraging natural gradients, CAMEx adapts more effectively to the structure of the parameter space, improving alignment between model updates and the manifold’s geometry. This approach enhances both pre-training and fine-tuning, resulting in better optimization trajectories and improved generalization without the substantial memory overhead typically associated with curvature-aware methods. Our contributions are threefold: (1) CAMEx significantly outperforms traditional Euclidean-based expert merging techniques across various natural language processing tasks, leading to enhanced performance during pre-training and fine-tuning; (2) we introduce a dynamic merging architecture that optimizes resource utilization, achieving high performance while reducing computational costs, facilitating efficient scaling of large language models; and (3) we provide both theoretical and empirical evidence to demonstrate the efficiency of our proposed method.},
+  journal={International Conference on Learning Representations (ICLR), 2025},
+  year={2025},
+  month={Feb},
+  url={https://openreview.net/forum?id=nT2u0M0nf8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)},
+  pdf={6998_CAMEx_Curvature_aware_Mer.pdf},
+  dimensions={true},
+}
+
 @article{momentum,
   abbr={NeurIPS},
   title={MomentumSMoE: Integrating Momentum into Sparse Mixture of Experts},
